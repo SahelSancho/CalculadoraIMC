@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Bem-Estar</title>
+    <meta name="description" content="Site sobre saúde e bem-estar, oferecendo dicas de alimentação saudável, exercícios físicos, saúde mental e uma calculadora de IMC.">
+    <meta name="keywords" content="saúde, bem-estar, alimentação saudável, exercícios, saúde mental, calculadora IMC">
+    <meta name="author" content="Seu Nome">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Saúde e Bem-Estar</div>
+            <div class="menu-icon" onclick="toggleMenu()" aria-label="Abrir Menu" aria-expanded="false">&#9776;</div>
+            <ul id="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#alimentacao">Alimentação</a></li>
+                <li><a href="#exercicios">Exercícios</a></li>
+                <li><a href="#saude-mental">Saúde Mental</a></li>
+                <li><a href="#calculadora-imc">Calculadora de IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="section-container">
+            <h1>Bem-vindo ao Saúde e Bem-Estar</h1>
+            <p>Cuidar da sua saúde é essencial para viver uma vida equilibrada. Nosso objetivo é proporcionar informações sobre como manter um corpo e mente saudáveis, com dicas práticas sobre alimentação, exercícios físicos e saúde mental.</p>
+            <img src="https://folhadouberaba.com.br/wp-content/uploads/2022/09/2-bem-estar-novos-habitos.jpg" alt="Saúde e Bem-Estar" class="main-image" loading="lazy">
+        </section>
+
+        <section id="alimentacao" class="section-container">
+            <h2>Alimentação Saudável</h2>
+            <p>Manter uma dieta equilibrada é fundamental para uma vida saudável. Uma alimentação rica em frutas, vegetais, proteínas magras e grãos integrais garante ao corpo os nutrientes necessários para funcionar corretamente.</p>
+            <ul>
+                <li><strong>Frutas:</strong> Fornecem vitaminas essenciais como a vitamina C, antioxidantes e fibras.</li>
+                <li><strong>Vegetais:</strong> Cheios de vitaminas e minerais, os vegetais ajudam no fortalecimento do sistema imunológico.</li>
+                <li><strong>Proteínas Magras:</strong> Carne de frango, peixe e feijão são fontes de proteínas que ajudam na construção muscular.</li>
+                <li><strong>Grãos Integrais:</strong> Alimentos como aveia e arroz integral são ricos em fibras e ajudam na digestão.</li>
+            </ul>
+        </section>
+
+        <section id="exercicios" class="section-container">
+            <h2>Exercícios Físicos</h2>
+            <p>Praticar exercícios regularmente é um dos pilares de uma vida saudável. Os benefícios incluem melhora da saúde cardiovascular, fortalecimento muscular e maior disposição no dia a dia. Seguem algumas sugestões de exercícios:</p>
+            <ul>
+                <li><strong>Iniciantes:</strong> Caminhadas leves durante 30 minutos ao ar livre.</li>
+                <li><strong>Intermediários:</strong> Corridas moderadas ou treinos de musculação de 3 a 4 vezes por semana.</li>
+                <li><strong>Avançados:</strong> Treinos funcionais ou HIIT (Treinamento Intervalado de Alta Intensidade) para aumentar a resistência e queimar calorias.</li>
+            </ul>
+        </section>
+
+        <section id="saude-mental" class="section-container">
+            <h2>Saúde Mental</h2>
+            <p>Cuidar da mente é tão importante quanto cuidar do corpo. Para manter uma boa saúde mental, é essencial equilibrar o estresse diário, praticar o autoconhecimento e reservar um tempo para relaxamento. Algumas estratégias incluem:</p>
+            <ul>
+                <li><strong>Meditação:</strong> Praticar a meditação diariamente ajuda a acalmar a mente e reduzir o estresse.</li>
+                <li><strong>Técnicas de Respiração:</strong> Respirar profundamente durante momentos de tensão pode trazer alívio imediato.</li>
+                <li><strong>Autocuidado:</strong> Reservar um tempo para si, fazendo atividades prazerosas como leitura ou ouvir música.</li>
+            </ul>
+        </section>
+
+        <section id="calculadora-imc" class="section-container">
+            <h2>Calculadora de IMC</h2>
+            <p>O Índice de Massa Corporal (IMC) é uma ferramenta útil para determinar se seu peso está dentro da faixa saudável. Insira seus dados abaixo para calcular o seu IMC:</p>
+            <form onsubmit="calcularIMC(event)">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso" min="1" step="any" placeholder="Ex: 70" required><br>
+                
+                <label for="altura">Altura (cm):</label>
+                <input type="number" id="altura" name="altura" min="50" step="any" placeholder="Ex: 170" required><br>
+                
+                <button type="submit">Calcular IMC</button>
+            </form>
+            <p id="resultado"></p>
+            <p><em>Nota: O IMC é uma ferramenta de triagem e não um diagnóstico definitivo. Consulte um profissional de saúde para uma avaliação completa.</em></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Saúde e Bem-Estar. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
