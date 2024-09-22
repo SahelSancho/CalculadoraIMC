@@ -23,4 +23,4 @@ Este projeto é um site focado em **saúde** e **bem-estar**, proporcionando inf
 1. Clone o repositório para o seu ambiente local:
 
    ```bash
-   git clone https://github.com/seu-usuario/saude-cuidados-pessoais.git
+   git clone https://github.com/SahelSancho/CalculadoraIMC.git
